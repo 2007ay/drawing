@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="input-group mb-3">
+        <input type="text" [(ngModel)]="inputText" (keyup.enter)="executeCommand()" required class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-secondary" (click)="executeCommand()" type="button">Create</button>
+        </div>
+      </div>
+      <div class="text-center" #container></div>
+    </div>
+    <div class="col-md-6">
+      <h4 class="desc"> Command Description</h4>
+      <div class="brief">
+        <p>
+          <span class="command">C</span><span class="options"> w h </span> <span class="description">Should create a new canvas of width w and height h.</span>
+        </p>
+        <p>
+          <span class="command">L</span> <span class="options"> x1 y1 x2 y2 </span> <span class="description">Should create a new line from (x1,y1) to (x2,y2). Currently only
+            horizontal or vertical lines are supported. Horizontal and vertical lines
+            will be drawn using the 'x' character.</span>
+        </p>
+        <p>
+          <span class="command">R</span> <span class="options"> x1 y1 x2 y2 </span> <span class="description">Should create a new rectangle, whose upper left corner is (x1,y1) and
+            lower right corner is (x2,y2). Horizontal and vertical lines will be drawn
+            using the 'x' character.</span>
+        </p>
+        <p>
+          <span class="command">B</span> <span class="options"> x y c </span> <span class="description">Should fill the entire area connected to (x,y) with "colour" c. The
+            behaviour of this is the same as that of the "bucket fill" tool in paint programs.</span> </p>
+        <p>
+          <span class="command">Q </span> <span class="description">Should quit the program.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

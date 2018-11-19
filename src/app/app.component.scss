@@ -1,0 +1,35 @@
+.container {
+  padding: 16px;
+
+  .text-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .canvas {
+    border: 1px solid #000000;
+  }
+
+  .command {
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .options {
+    background: beige;
+  }
+
+  .desc {
+    padding: 2px;
+    border-bottom: 1px solid;
+  }
+
+  .brief {
+    padding: 2px;
+  }
+
+}
